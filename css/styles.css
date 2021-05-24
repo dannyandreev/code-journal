@@ -1,0 +1,88 @@
+.headerBar {
+  width: 100%;
+  background-color: rgb(86, 43, 129);
+}
+
+.row {
+  width: 100%;
+}
+
+.titleText {
+  color: white;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.headerText {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.inputText {
+  margin-bottom: 12px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.column {
+  width: 80%;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.entryImg {
+  width: 100%;
+}
+
+.textArea {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justifyRight {
+  float: right;
+}
+
+.button {
+  color: white;
+  background-color: rgb(86, 43, 129);
+  border-radius: 4px;
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+.textInput {
+  width: 100%;
+}
+
+.contentBox {
+  margin: 10px;
+}
+
+.firstElement {
+  margin: 10px;
+  margin-left: 0;
+}

@@ -15,10 +15,73 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
+  <header class = "row">
+    <div class="headerBar contents">
+      <div class="column">
+        <div class="titleText">
+          Code Journal
+        </div>
+      </div>
+    </div>
   </header>
   <main>
-  </main>
+    <div class="row">
+      <div class="contents">
+        <div class="column">
+          <div class="headerText">
+            New Entry
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "contents">
+        <div class = "column">
+          <div class = "flex">
+            <div class ="firstElement">
+              <div>
+                <img src="images/placeholder-image-square.jpg" class = "entryImg">
+              </div>
+            </div>
+            <div class = "textInput contentBox">
+              <div class = "inputText">
+                <label for="title">Title</label>
+              </div>
+              <div>
+                <div>
+                  <input class="textArea" type="text" id="title" name="title">
+                </div>
+              </div>
+              <div class = "inputText">
+                <label for="photoURL">Photo URL</label>
+              </div>
+              <div>
+                <div>
+                  <input class="textArea" type="text" id="photoURL" name="photoURL">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class = "inputText">
+              <label for="notes">Notes</label>
+            </div>
+            <div>
+              <div>
+                <textarea class="textArea" name="notes" id="notes" rows="10" cols="30"></textarea>
+              </div>
+            </div>
+            <div class = "justifyRight">
+              <div class = "marginSmall">
+                <label for="save"></label>
+                <input class = "button" type="submit" id="save" value="SAVE">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
