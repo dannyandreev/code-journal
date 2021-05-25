@@ -62,11 +62,11 @@ function handleDomLoaded(event) {
   var entries = document.getElementById('entries');
 
   for (var i = 0; i < data.entries.length; i++) {
-    entries.append(createEntryHTML(i));
+    entries.append(createEntryHTML(data.entries[i]));
   }
 }
 
-function createEntryHTML(index) {
+function createEntryHTML(object) {
   var container = document.createElement('div');
   var imgDiv = document.createElement('div');
   var img = document.createElement('img');
@@ -75,13 +75,13 @@ function createEntryHTML(index) {
   var text = document.createElement('div');
 
   container.className = 'entry flex';
-  img.setAttribute('src', data.entries[index].imageURL);
+  img.setAttribute('src', object.imageURL);
   img.className = 'entryImg';
   textContent.className = 'journalTextBox';
   title.className = 'journalHeaderText';
-  title.textContent = data.entries[index].title;
+  title.textContent = object.title;
   text.className = 'journalText';
-  text.textContent = data.entries[index].text;
+  text.textContent = object.text;
 
   textContent.append(title, text);
   imgDiv.append(img);
