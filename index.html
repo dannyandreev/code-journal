@@ -15,26 +15,29 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div data-view="entry-form">
-    <header class = "row">
-      <div class="headerBar contents">
-        <div class="column flexLeft">
-          <div class="titleText">
-            Code Journal
-          </div>
-          <div class="tabText">
+  <header class = "row">
+    <div class="headerBar contents">
+      <div class="column flexLeft">
+        <div class="titleText">
+          Code Journal
+        </div>
+        <div class="tab-container flexLeft">
+          <div class="tab active" data-view="new-entry">
             New Entry
           </div>
-          <div class="tabText">
-            Entries
+          <div class="tab" data-view="view-entries">
+            View Entries
           </div>
-          <div class="tabText">
+          <div class="tab" data-view="edit-entry">
             Edit Entry
           </div>
         </div>
       </div>
-    </header>
-    <main>
+    </div>
+  </header>
+
+  <main>
+    <div class = "view" data-view="new-entry">
       <div class="row">
         <div class="contents">
           <div class="column">
@@ -91,11 +94,33 @@
           </form>
         </div>
       </div>
-    </main>
-    <footer>
+    </div>
+    <div class="view hidden" data-view="view-entries">
+      <div class="row">
+        <div class="contents">
+          <div class="column">
+            <div class="headerText">
+              View Entries
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="contents">
+          <div class="column">
+            <div class="" id="entries">
 
-    </footer>
-  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="view hidden" data-view="edit-entry">
+      edit entries
+    </div>
+  </main>
+  <footer>
+  </footer>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>

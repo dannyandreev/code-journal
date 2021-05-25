@@ -25,3 +25,67 @@ function handleSubmit(event) {
 function makeJournalEntry(title, url, text, entryId, nextEntryId) {
   return { title: title, imageURL: url, text: text, entryId: entryId, nextEntryId: nextEntryId };
 }
+
+var tabContainer = document.querySelector('.tab-container');
+var tabNodeList = document.querySelectorAll('.tab');
+var viewNodeList = document.querySelectorAll('.view');
+
+tabContainer.addEventListener('click', handleClick);
+window.addEventListener('DOMContentLoaded', handleDomLoaded);
+
+function handleClick(event) {
+  if (event.target.matches('.tab')) {
+    tabNodeList.forEach(
+      function (currentValue) {
+        if (currentValue === event.target) {
+          currentValue.className = 'tab active';
+        } else {
+          currentValue.className = 'tab';
+        }
+      }
+    );
+
+    var dataView = event.target.getAttribute('data-view');
+    viewNodeList.forEach(
+      function (currentValue) {
+        if (currentValue.getAttribute('data-view') === dataView) {
+          currentValue.className = 'view';
+        } else {
+          currentValue.className = 'view hidden';
+        }
+      }
+    );
+  }
+}
+
+function handleDomLoaded(event) {
+  var entries = document.getElementById('entries');
+
+  for (var i = 0; i < data.entries.length; i++) {
+    entries.append(createEntryHTML(data.entries[i]));
+  }
+}
+
+function createEntryHTML(object) {
+  var container = document.createElement('div');
+  var imgDiv = document.createElement('div');
+  var img = document.createElement('img');
+  var textContent = document.createElement('div');
+  var title = document.createElement('div');
+  var text = document.createElement('div');
+
+  container.className = 'entry flex';
+  img.setAttribute('src', object.imageURL);
+  img.className = 'entryImg';
+  textContent.className = 'journalTextBox';
+  title.className = 'journalHeaderText';
+  title.textContent = object.title;
+  text.className = 'journalText';
+  text.textContent = object.text;
+
+  textContent.append(title, text);
+  imgDiv.append(img);
+  container.append(imgDiv, textContent);
+
+  return container;
+}

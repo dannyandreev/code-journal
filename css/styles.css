@@ -15,12 +15,18 @@
   font-size: 16px;
 }
 
-.tabText {
+.tab {
   color: white;
   font-family: sans-serif;
   font-size: 13px;
-  margin-top: 13px;
-  margin-left: 16px;
+  padding-top: 13px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-left: 8px;
+}
+
+.active {
+  background-color: blueviolet;
 }
 
 .headerText {
@@ -28,6 +34,19 @@
   font-size: 24px;
   font-weight: 600;
   margin-top: 12px;
+}
+
+.journalHeaderText {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.journalText {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .inputText {
@@ -54,6 +73,10 @@ body {
 
 .entryImg {
   width: 100%;
+}
+
+.entry {
+  margin-bottom: 50px;
 }
 
 .textArea {
@@ -88,6 +111,11 @@ body {
 
 .textInput {
   width: 100%;
+}
+
+.journalTextBox {
+  width: 100%;
+  margin-left: 10px;
 }
 
 .contentBox {
