@@ -15,10 +15,87 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-  </header>
-  <main>
-  </main>
+  <div data-view="entry-form">
+    <header class = "row">
+      <div class="headerBar contents">
+        <div class="column flexLeft">
+          <div class="titleText">
+            Code Journal
+          </div>
+          <div class="tabText">
+            New Entry
+          </div>
+          <div class="tabText">
+            Entries
+          </div>
+          <div class="tabText">
+            Edit Entry
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="row">
+        <div class="contents">
+          <div class="column">
+            <div class="headerText">
+              New Entry
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "contents">
+          <form class = "column" id="form">
+            <div class = "flex">
+              <div class ="firstElement">
+                <div>
+                  <img src="images/placeholder-image-square.jpg" class = "entryImg" id="journalCoverImage">
+                </div>
+              </div>
+              <div class = "textInput contentBox">
+                <div class = "inputText">
+                  <label for="title">Title</label>
+                </div>
+                <div>
+                  <div>
+                    <input class="textArea" type="text" id="title" name="title" required>
+                  </div>
+                </div>
+                <div class = "inputText">
+                  <label for="photoURL">Photo URL</label>
+                </div>
+                <div>
+                  <div>
+                    <input class="textArea" type="text" id="photoURL" name="photoURL" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class = "inputText">
+                <label for="notes">Notes</label>
+              </div>
+              <div>
+                <div>
+                  <textarea class="textArea" name="notes" id="notes" rows="10" cols="30" required></textarea>
+                </div>
+              </div>
+              <div class = "justifyRight">
+                <div class = "marginSmall">
+                  <label for="save"></label>
+                  <input class = "button" type="submit" id="save" value="SAVE">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
