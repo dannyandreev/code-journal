@@ -86,3 +86,17 @@ body {
   margin: 10px;
   margin-left: 0;
 }
+
+footer {
+  min-height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    display: block;
+  }
+
+  .contentBox {
+    margin: 0;
+  }
+}
