@@ -93,6 +93,11 @@ body {
   display: flex;
 }
 
+.flexRight {
+  display: flex;
+  justify-content: right;
+}
+
 .justifyRight {
   float: right;
 }
@@ -107,6 +112,10 @@ body {
   font-family: sans-serif;
   font-weight: 550;
   letter-spacing: 1px;
+}
+
+.buttonMargin {
+  margin-left: 20px;
 }
 
 .textInput {
@@ -125,6 +134,34 @@ body {
 .firstElement {
   margin: 10px;
   margin-left: 0;
+}
+
+.modal-content {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal-box {
+  background-color: white;
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
